@@ -1,0 +1,395 @@
+/* #ui */
+/* ^ do not touch this line ^ */
+
+* {
+  font-family: "MonoLisa Nerd Font", monospace !important;
+}
+
+/* link hints */
+.LH {
+  border: 2px rgba(228, 202, 87, 0.5) solid;
+  background: unset;
+  margin-top: -2px;
+  margin-left: -2px;
+  color: #1f2731;
+  z-index: 0;
+  box-shadow: 0px 2px 11px rgb(0, 0, 0, 0.12);
+}
+
+.LH:before {
+  position: absolute;
+  background: rgba(255, 247, 121, 0.95);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+}
+
+.D .LH {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: #43474d;
+}
+
+/* hints matching chars */
+.MC {
+  color: #cc5200;
+}
+
+.D .MC {
+  color: #e92626;
+}
+
+/* bottom hud */
+.HUD {
+  bottom: 1rem;
+  left: 1rem;
+  right: unset;
+  border-radius: 6px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  height: 1.5rem !important;
+  line-height: unset;
+  text-transform: lowercase;
+  color: #838686;
+  max-width: 420px;
+  min-width: unset;
+  line-height: 21px;
+  border: 3px rgba(0, 0, 0, 0.08) solid;
+  display: flex;
+  align-items: center;
+}
+
+.HUD.UI {
+  min-width: 180px;
+  align-items: unset;
+}
+
+.Omnibar {
+  padding-bottom: 20px;
+}
+
+.HUD:after {
+  border-radius: unset;
+  border: none;
+  background: rgba(247, 246, 246, 0.9);
+}
+
+.HUD.D {
+  border-color: rgba(80, 83, 84, 0.14);
+}
+
+.HUD.D:after {
+  background: rgba(10, 14, 20, 0.85);
+}
+
+/* #omni */
+/* ^ do not touch this line ^ */
+
+* {
+  font-family: "MonoLisa Nerd Font", monospace !important;
+}
+
+.transparent {
+  opacity: 1;
+}
+
+body {
+  background: rgba(255, 255, 255, 0.44);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid hsla(270, 2%, 56%, 0.2);
+  border-color: 1px solid hsla(270, 2%, 56%, 0.2);
+  box-shadow:
+    0 0px 5px 6px rgba(0, 0, 0, 0.02),
+    0 0 0 0.5px rgba(0, 0, 0, 0.08),
+    inset 0 0.5px 0 0 hsla(0, 0%, 100%, 0.3);
+}
+
+body.has-dark {
+  background: rgba(0, 0, 0, 0.44);
+  border: 1px solid hsla(270, 2%, 56%, 0.2);
+  border-color: 1px solid hsla(270, 2%, 56%, 0.2);
+  backdrop-filter: blur(15px);
+  box-shadow:
+    0 0px 5px 6px rgba(0, 0, 0, 0.09),
+    0 0 0 0.5px rgba(0, 0, 0, 0.8),
+    inset 0 0.5px 0 0 hsla(0, 0%, 100%, 0.3);
+}
+
+body:after {
+  border: unset;
+}
+
+#bar {
+  background: rgba(255, 255, 255, 0.1);
+  height: 23px;
+  border-radius: unset;
+  border-bottom: unset;
+}
+
+.has-dark #bar {
+  background: rgba(0, 0, 0, 0.54);
+}
+
+#bar.empty {
+  border-radius: 0;
+}
+
+.has-dark #bar::before {
+  color: #d4d4d4;
+}
+
+#input {
+  border: none;
+  background: none;
+  box-shadow: unset;
+  font-size: 20rem;
+  color: #000000;
+}
+
+.has-dark #input {
+  color: #ddd;
+}
+
+#toolbar {
+  top: 7px;
+  right: 14px;
+  color: #fff;
+}
+
+#toolbar .button {
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+  cursor: pointer;
+  border: 3px transparent solid;
+  position: relative;
+  opacity: 0.5;
+  transition: 100ms ease-in-out opacity;
+}
+
+#toolbar .button:hover {
+  background: unset;
+  opacity: 1;
+  stroke: #000000;
+}
+
+#toolbar .button > svg {
+  opacity: 0.5;
+  fill: #000000;
+}
+
+#toolbar .button#toggle-dark > svg {
+  transform: translateY(1px) rotate(45deg);
+}
+
+#toolbar .button#close > svg {
+  transform: scale(1.4);
+  color: #000000;
+}
+
+#toolbar .button#toggle-dark .i-moon {
+  fill: unset;
+  stroke-width: 1.4;
+  fill: #000000;
+  stroke: #000000;
+}
+
+#toolbar .button#toggle-dark .i-sun {
+  stroke-width: 2.1;
+  fill: #000000;
+  stroke: #000000;
+}
+
+.has-dark #toolbar .button#toggle-dark .i-moon {
+  fill: #ddd8cd;
+  stroke: #ddd8cd;
+}
+
+.has-dark #toolbar .button#toggle-dark .i-sun {
+  fill: #ddd8cd;
+  stroke: #ddd8cd;
+}
+
+.has-dark #toolbar .button#close > svg {
+  fill: #ddd8cd;
+  stroke: #ddd8cd;
+}
+
+#list {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: unset;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.has-dark #list {
+  background: rgba(0, 0, 0, 0.54);
+}
+
+.item {
+  padding: 6px 10px;
+  padding-top: 3px;
+  margin: 0 5px;
+  margin-top: -2px;
+  border-radius: 6px;
+  border: unset;
+  border: 3px transparent solid;
+  height: 46px;
+}
+
+.item::before {
+  position: absolute;
+  background: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+}
+
+.item.s,
+.item:hover {
+  background-color: unset;
+}
+
+.has-dark .item.s,
+.has-dark .item:hover {
+  border: 5px rgba(80, 83, 84, 0.14) solid;
+}
+
+.item.s::before {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.item:hover::before {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.has-dark .item.s::before {
+  background-color: rgba(80, 83, 84, 0.14);
+}
+
+.has-dark .item:hover::before {
+  background-color: rgba(80, 83, 84, 0.14);
+}
+
+.item .icon {
+  width: 24px;
+  height: 24px;
+  padding-right: unset;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-position: bottom right;
+  fill: #000000;
+}
+
+.has-dark .item .icon {
+  fill: #ddd8cd;
+  stroke: #ddd8cd;
+}
+
+.item .icon path {
+  opacity: 0.25;
+  position: absolute;
+  z-index: -1;
+  transform-origin: 0px 0px;
+  transform: scale(0.75);
+}
+
+.item .top {
+  color: #000000;
+  position: relative;
+  height: 30px;
+}
+
+.has-dark .item .top {
+  color: #ddd;
+}
+
+.item .top .title {
+  font-size: 16rem;
+  line-height: 0.8em;
+  margin-top: 2px;
+}
+
+.item .top .title match {
+  color: #505354;
+}
+
+.has-dark .item .top .title match {
+  color: #ffffff;
+}
+
+.item .top .title:empty::after {
+  content: "<blank>";
+}
+
+.item .bottom {
+  margin-top: -14px;
+  padding-left: 14px;
+}
+
+.item .bottom a {
+  color: #404040;
+  font-size: 14rem;
+}
+
+.has-dark .item .bottom a {
+  color: #868582;
+}
+
+.item .bottom a match {
+  color: #686c6d;
+}
+
+.has-dark .item .bottom a match {
+  color: #76808a;
+}
+
+/* #find */
+/* ^ do not touch this line ^ */
+
+* {
+  font-family: "MonoLisa Nerd Font", monospace !important;
+  background: unset;
+}
+
+:host,
+body {
+  background-color: unset !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+:host(.D),
+body.D {
+  background-color: unset !important;
+}
+
+.r {
+  color: #838686;
+  border: none;
+  border-radius: unset;
+  box-shadow: unset;
+  background: unset;
+  height: 10px;
+}
+
+.r.D {
+  background: unset;
+  color: #d4d4d4;
+}
+
+#i {
+  color: #1f2731;
+}
+
+.D #i {
+  color: #ffffff;
+}
