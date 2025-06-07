@@ -2,7 +2,7 @@
 /* ^ do not touch this line ^ */
 
 * {
-  font-family: "MonoLisa Nerd Font", monospace !important;
+  font-family: "JetBrainsMono NFM SemiBold", monospace !important;
 }
 
 /* link hints */
@@ -88,7 +88,7 @@
 /* ^ do not touch this line ^ */
 
 * {
-  font-family: "MonoLisa Nerd Font", monospace !important;
+  font-family: "JetBrainsMono NFM SemiBold", monospace !important;
 }
 
 .transparent {
@@ -110,7 +110,7 @@ body {
 }
 
 body.has-dark {
-  background: rgba(0, 0, 0, 0.44);
+  background: rgba(60, 50, 30, 0.7);
   border: 1px solid hsla(270, 2%, 56%, 0.2);
   border-color: 1px solid hsla(270, 2%, 56%, 0.2);
   backdrop-filter: blur(15px);
@@ -356,7 +356,7 @@ body:after {
 /* ^ do not touch this line ^ */
 
 * {
-  font-family: "MonoLisa Nerd Font", monospace !important;
+  font-family: "JetBrainsMono NFM SemiBold", monospace !important;
   background: unset;
 }
 
