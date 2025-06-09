@@ -1,4 +1,4 @@
-# Vimium Glass Fork
+# Vimium Glass Brown Theme
 Version with more brownish colors
 
 ![image](Bildschirmfoto%202025-06-07%20um%2012.30.18.png)
